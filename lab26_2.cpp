@@ -24,6 +24,18 @@ int main(){
 	line_up.insert(loc,"Oscar");
 	
 	//Write your code here
+	line_up.push_back("Luffy");
+	line_up.push_back("Sanji");
+	line_up.push_back("Nami");
+	line_up.pop_front();
+	line_up.pop_front();
+	for (int i=0;i<2;i++)loc++;
+	line_up.insert( loc, "Narutu");
+	line_up.push_front("Prayath");
+	for (int i=0;i<3;i++)loc--;
+	line_up.insert(loc,"Tony");
+	line_up.erase(loc);
+	for (int i=0;i<3;i++)	line_up.pop_front();
 	
 	printList(line_up);
 		
